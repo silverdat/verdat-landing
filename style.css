@@ -106,11 +106,7 @@ ul{
     margin-bottom: 5px;
 }
 /* Body Content */
-.body-container{
-    max-width: 1600px;
-    min-height: 100vh;
-    padding: 1.5rem 3rem ;
-}
+
 
 /* Footer */
 .footer{
