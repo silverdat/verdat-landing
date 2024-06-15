@@ -1,0 +1,145 @@
+/* Overrides */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.333;
+    background-color: #fafafa;
+
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* General */
+.h-flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h-flex-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.5rem;
+}
+.h-flex-left{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 1rem;
+}
+.v-flex-centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.v-flex-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+/* Buttons */
+.button{
+    display: inline;
+    color: white;
+    padding: .25rem .5rem;
+    font-size: 10px;
+    font-weight: 300;
+    background: #4CAF00;
+    border-radius: 6px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+/* Topbar */
+.top-bar{  
+    min-height: 5.25rem;
+    background: #0F1A39;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+.topbar-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu-wrapper{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.logo{
+    width: 148px;
+    height: auto;
+}
+.actions{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.topbar-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+/* Body Content */
+.body-container{
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 1.5rem 3rem ;
+}
+
+/* Footer */
+.footer{
+    height: 20rem;
+    background: #0F1A39;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container{
+    width: 80%;
+}
+.body-text{
+    font-size: 16px;
+    max-width: 500px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: white;
+}
+.logo-sm{
+    width: 122px;
+    height: auto;
+}
+.url-links{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 3rem;
+
+}
