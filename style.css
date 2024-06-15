@@ -106,8 +106,13 @@ ul{
     margin-bottom: 5px;
 }
 /* Body Content */
+.content {
+    height: 75vh;
+}
 
-
+#experience-container {
+    height: 100%;
+}
 /* Footer */
 .footer{
     height: 20rem;
