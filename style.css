@@ -144,3 +144,16 @@ ul{
     margin-right: 3rem;
 
 }
+
+.sub-footer {
+    height: 4rem;
+    background: #315CD7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.copyright {
+    font-size: .8rem;
+}
