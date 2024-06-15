@@ -16,6 +16,22 @@
         const onLoad = async () => {
             const embeddingContext = await QuickSightEmbedding.createEmbeddingContext();
             //...
+
+            // Perform GET request
+            const url = 'https://qpb3t472rhdvww4c64gvfmh55m0wfelo.lambda-url.us-east-1.on.aws/';
+            const response = await fetch(url);
+            const data = await response.json();
+            const embedUrl = data.embedURL;
+
+            const frameOptions = {
+                    url: embedUrl,
+                    container: '#experience-container',
+                    height: "100%",
+                    width: "100%",
+                    resizeHeightOnSizeChangedEvent: true,
+                };
+
+            const embeddedDashboardExperience = await embeddingContext.embedDashboard(frameOptions);
         };
     </script>
 </head>
@@ -55,8 +71,7 @@
     </section>
 
     <section class="content">
-        <div class="body-container">
-            Page Body
+        <div id="experience-container" class="body-container">
         </div>
     </section>
 
