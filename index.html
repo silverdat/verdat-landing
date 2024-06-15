@@ -24,12 +24,13 @@
             const embedUrl = data.embedURL;
 
             const frameOptions = {
-                    url: embedUrl,
-                    container: '#experience-container',
-                    height: "100%",
-                    width: "100%",
-                    resizeHeightOnSizeChangedEvent: true,
-                };
+                url: embedUrl,
+                container: '#experience-container',
+                locale: 'es-ES',
+                width: "100%",
+                footerPaddingEnabled: true,
+                scrolling: 'no',
+            };
 
             const embeddedDashboardExperience = await embeddingContext.embedDashboard(frameOptions);
         };
@@ -70,7 +71,7 @@
         </div>
     </section>
 
-    <section class="content">
+    <section class="content" style="height: calc(100vh - 64px)">
         <div id="experience-container" class="body-container">
         </div>
     </section>
